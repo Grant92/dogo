@@ -28,10 +28,10 @@ inbox = box["INBOX"]
 try:
     msgs = inbox.search(unseen = True)
     msg = msgs[0]
-##wrong function
-##except IndexError:
-   ## print("Žádná nová platba")
-   ## sys.exit(1)
+##test
+except IndexError:
+   print("Žádná nová platba")
+   sys.exit(1)
 msg_text = msg.html_body
 soup = BeautifulSoup(msg_text,'html.parser')
 list = []
