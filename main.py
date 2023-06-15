@@ -28,7 +28,7 @@ inbox = box["INBOX"]
 try:
     msgs = inbox.search(unseen = True)
     msg = msgs[0]
-##wrong function
+##wrong function________________test2
 ##except IndexError:
    ## print("Žádná nová platba")
    ## sys.exit(1)
